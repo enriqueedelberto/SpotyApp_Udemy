@@ -16,3 +16,26 @@
     </div>
 
 </div>
+
+<div class="row m-5">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <th>Foto</th>
+                <th>Album</th>
+                <th>Canción</th>
+                <th>Vista previa</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let track of topTracks">
+                    <td></td>
+                    <td>{{track.album.name}}</td>
+                    <td>{{track.name}}</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
