@@ -13,6 +13,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 //Importar las rutas
 import { ROUTES } from './app.routes';
+//services
+import { SpotifyService } from './services/spotify.service';
 
 
 
@@ -29,7 +31,9 @@ import { ROUTES } from './app.routes';
     HttpClientModule,
     RouterModule.forRoot(ROUTES, {useHash: true})
   ],
-  providers: [],
+  providers: [
+    SpotifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
